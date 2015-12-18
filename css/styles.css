@@ -1,5 +1,7 @@
 body {
   background-color: #A09C9E;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .header {
@@ -8,6 +10,7 @@ body {
 
 .nav {
   background-color: #fb968b;
+  padding: 5px;
 }
 
 .column1 {
@@ -16,4 +19,20 @@ body {
 
 .column2 {
   background-color: #9f8bfb;
+
+}
+
+@media (min-width: 0px) {
+  .header, .nav {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .column1, .column2 {
+    height:100vh;
+  }
+
+  .header, .nav {
+    text-align: left;
+  }
 }
